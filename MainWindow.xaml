@@ -1,0 +1,67 @@
+﻿<Window x:Class="MigrateEmailAndPhoneCallWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MigrateEmailAndPhoneCallWPF"
+        mc:Ignorable="d"
+        Title="Migrate Emails and Phone Calls" Height="450" Width="800" Icon="Images/sync1.ico">
+    <DockPanel LastChildFill="True">
+        <Border BorderBrush="Black" BorderThickness="0" DockPanel.Dock="Top">
+            <Ribbon x:Name="rbMain" VerticalAlignment="Top" IsMinimized="False" SelectionChanged="RbMain_SelectionChanged">
+                <Ribbon.HelpPaneContent>
+                    <StackPanel Orientation="Horizontal">
+                        <Label x:Name="lbUserGreeting" />
+                        <RibbonToggleButton x:Name="tbMinRibb" Checked="TbMinRibb_Checked" Unchecked="TbMinRibb_Unchecked" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" SmallImageSource="Images/arrow-up-2.png"   />
+                    </StackPanel>
+                </Ribbon.HelpPaneContent>
+
+                <RibbonTab  x:Name="tbSync"  Header="Sync" Margin="0,0,0,0">
+                    <RibbonGroup>
+                        <RibbonToggleButton x:Name="btnPhoneCall" Label="Phone Call" Margin="0,7,0,-73"  Width="71" Click="BtnPhoneCall_Click" LargeImageSource="Images/phonecall.jpg"/>
+                    </RibbonGroup>
+                    <RibbonGroup>
+                        <RibbonToggleButton x:Name="btnEmail" Label="Email" Margin="0,7,0,-73"  Width="71" Click="BtnEmail_Click" LargeImageSource="Images/email.png"/>
+                    </RibbonGroup>
+                    <RibbonGroup>
+                        <RibbonToggleButton x:Name="btnTask" Label="Task" Margin="0,7,0,-73"  Width="71" Click="BtnTask_Click" LargeImageSource="Images/task.png"/>
+                    </RibbonGroup>
+                    <RibbonGroup>
+                        <RibbonToggleButton x:Name="btnAppointment" Label="Appointment" Margin="0,7,0,-73"  Width="81" Click="BtnAppointment_Click" LargeImageSource="Images/app.png"/>
+                    </RibbonGroup>
+                </RibbonTab>
+            </Ribbon>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Bottom">
+            <StatusBar x:Name="sBar" Height="30" VerticalAlignment="Bottom" Background="#FFC4DAF3">
+                <StatusBar.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="55" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </ItemsPanelTemplate>
+                </StatusBar.ItemsPanel>
+                <StatusBarItem>
+                    <Label Content="Status"  HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="0" Foreground="#FFFB0000" FontWeight="Bold" Width="50" Height="20" FontSize="14" HorizontalContentAlignment="Center" />
+                </StatusBarItem>
+                <Separator Grid.Column="1" />
+                <StatusBarItem Grid.Column="2">
+                    <TextBlock Name="tbStatus"   Foreground="#FFFB0000" FontSize="14" FontWeight="Bold" Height="20" />
+                </StatusBarItem>
+            </StatusBar>
+        </Border>
+
+        <Border BorderThickness="0">
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Height="Auto" Width="Auto">
+                <Grid x:Name="rbGridLeft"  Background="Transparent" Height="Auto" Width="Auto" />
+            </ScrollViewer>
+        </Border>
+    </DockPanel>
+</Window>

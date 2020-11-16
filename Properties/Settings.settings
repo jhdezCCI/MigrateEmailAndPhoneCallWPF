@@ -1,0 +1,202 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MigrateEmailAndPhoneCallWPF.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CRMOrgServiceDev" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-dev.api.crm.dynamics.com/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="CRMOrgServiceTest" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-test.api.crm.dynamics.com/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="CRMOrgServiceUAT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-uat.api.crm.dynamics.com/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="WirelessCRMDB_Dev" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEVWLSCRMSQL1.US.CROWNCASTLE.COM,49869;Initial Catalog=Wireless_MSCRM;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEVWLSCRMSQL1.US.CROWNCASTLE.COM,49869;Initial Catalog=Wireless_MSCRM;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="MigrationDB_Test" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=IHUBSQL_TST.US.CROWNCASTLE.COM,59085;Initial Catalog=Migration;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=IHUBSQL_TST.US.CROWNCASTLE.COM,59085;Initial Catalog=Migration;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="InsideSalesOrgServ" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://org56d67cf6.api.crm.dynamics.com/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="UsernameIS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dynamics_dev_service_user@crowncastle.onmicrosoft.com</Value>
+    </Setting>
+    <Setting Name="PasswordIS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Crown@dev123</Value>
+    </Setting>
+    <Setting Name="CCFDEV3_MSCRMConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEV3CCFCRMSQL1.US.CROWNCASTLE.COM\DEV3CCFCRMSQL1,49843;Initial Catalog=CCFDEV3_MSCRM;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEV3CCFCRMSQL1.US.CROWNCASTLE.COM\DEV3CCFCRMSQL1,49843;Initial Catalog=CCFDEV3_MSCRM;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="FiberCRMDB_UAT" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEV5CCFCRMSQL1.US.CROWNCASTLE.COM,54388;Initial Catalog=CCFDEV5_MSCRM ;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEV5CCFCRMSQL1.US.CROWNCASTLE.COM,54388;Initial Catalog=CCFDEV5_MSCRM ;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="IHUBDATA2_DEV" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEVIHUBSQL1.US.CROWNCASTLE.COM,53895;Initial Catalog=IHUBDATA2;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEVIHUBSQL1.US.CROWNCASTLE.COM,53895;Initial Catalog=IHUBDATA2;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="IHUBDATA2_Test" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=IHUBSQL_TST.US.CROWNCASTLE.COM,59085;Initial Catalog=IHUBDATA2;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=IHUBSQL_TST.US.CROWNCASTLE.COM,59085;Initial Catalog=IHUBDATA2;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="IHUBDATA2_UAT" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=IHUBSQL_UAT.US.CROWNCASTLE.COM,52420;Initial Catalog=IHUBDATA2;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=IHUBSQL_UAT.US.CROWNCASTLE.COM,52420;Initial Catalog=IHUBDATA2;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="CRMOrgServiceSTG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-stage.crm.dynamics.com/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="MigrationDB_Dev" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEVIHUBSQL1.US.CROWNCASTLE.COM,53895;Initial Catalog=Migration;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEVIHUBSQL1.US.CROWNCASTLE.COM,53895;Initial Catalog=Migration;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="MigrationDB_UAT" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=IHUBSQL_UAT.US.CROWNCASTLE.COM,52420;Initial Catalog=Migration;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=IHUBSQL_UAT.US.CROWNCASTLE.COM,52420;Initial Catalog=Migration;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="IHUBDATA2_STG" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=IHUBSQL_STG.US.CROWNCASTLE.COM,51717;Initial Catalog=IHUBDATA2;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=IHUBSQL_STG.US.CROWNCASTLE.COM,51717;Initial Catalog=IHUBDATA2;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="FiberCRMDB_Test" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEV3CCFCRMSQL1.US.CROWNCASTLE.COM,49843;Initial Catalog=CCFDEV3_MSCRM ;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEV3CCFCRMSQL1.US.CROWNCASTLE.COM,49843;Initial Catalog=CCFDEV3_MSCRM ;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="FiberCRMDB_STG" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEV4CCFCRMSQL1.US.CROWNCASTLE.COM,51489;Initial Catalog=CCFDEV4_MSCRM ;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEV4CCFCRMSQL1.US.CROWNCASTLE.COM,51489;Initial Catalog=CCFDEV4_MSCRM ;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="MigrationDB_STG" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=IHUBSQL_STG.US.CROWNCASTLE.COM,51717;Initial Catalog=Migration;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=IHUBSQL_STG.US.CROWNCASTLE.COM,51717;Initial Catalog=Migration;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="CRMDevURI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-dev.crm.dynamics.com/</Value>
+    </Setting>
+    <Setting Name="CRMTestURI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-test.crm.dynamics.com/</Value>
+    </Setting>
+    <Setting Name="CRM_UAT_URI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-uat.crm.dynamics.com/</Value>
+    </Setting>
+    <Setting Name="CRM_STG_URI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-stage.crm.dynamics.com/</Value>
+    </Setting>
+    <Setting Name="FiberCRMDB_Dev" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEV3CCFCRMSQL1.US.CROWNCASTLE.COM,49843;Initial Catalog=CCFDEV3_MSCRM ;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEV3CCFCRMSQL1.US.CROWNCASTLE.COM,49843;Initial Catalog=CCFDEV3_MSCRM ;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="CRM_MOCK_URI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-mock.crm.dynamics.com/</Value>
+    </Setting>
+    <Setting Name="CRMOrgServiceMock" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle-mock.api.crm.dynamics.com/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="WirelessCRMDB_Test" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEVWLSCRMSQL1.US.CROWNCASTLE.COM,49869;Initial Catalog=WirelessDev5_MSCRM;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEVWLSCRMSQL1.US.CROWNCASTLE.COM,49869;Initial Catalog=WirelessDev5_MSCRM;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="CRMOrgServiceProd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle.api.crm.dynamics.com/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="CRM_Prod_URI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://crowncastle.crm.dynamics.com/</Value>
+    </Setting>
+    <Setting Name="WirelessCRMDB_Prod" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=WIRELESSCRMPRD.US.CROWNCASTLE.COM,52065;Initial Catalog=Wireless_MSCRM;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=WIRELESSCRMPRD.US.CROWNCASTLE.COM,52065;Initial Catalog=Wireless_MSCRM;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="MigrationDB_Prod" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=IHUBSQL_PRD.US.CROWNCASTLE.COM,54805;Initial Catalog=Migration;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="IHUBDATA2_Prod" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=IHUBSQL_PRD.US.CROWNCASTLE.COM,54805;Initial Catalog=IHUBDATA2;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="FiberCRMDB_Prod" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=CCFCRMSQLN1.US.CROWNCASTLE.COM,62215;Initial Catalog=CCFPROD_MSCRM;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=CCFCRMSQLN1.US.CROWNCASTLE.COM,62215;Initial Catalog=CCFPROD_MSCRM;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="InsideSalesOrgServProd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://ccicwireless.api.crm.dynamics.com/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="PasswordISProd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">an4aiR?ei8aeh1h</Value>
+    </Setting>
+    <Setting Name="UsernameISProd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Zwlscrmmkto@us.crowncastle.com</Value>
+    </Setting>
+    <Setting Name="WirelessCRMDB_UAT" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEVWLSCRMSQL1.US.CROWNCASTLE.COM,49869;Initial Catalog=Wireless_MSCRM;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEVWLSCRMSQL1.US.CROWNCASTLE.COM,49869;Initial Catalog=Wireless_MSCRM;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="WirelessCRMDB_STG" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEVWLSCRMSQL1.US.CROWNCASTLE.COM,49869;Initial Catalog=Wireless_MSCRM;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEVWLSCRMSQL1.US.CROWNCASTLE.COM,49869;Initial Catalog=Wireless_MSCRM;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

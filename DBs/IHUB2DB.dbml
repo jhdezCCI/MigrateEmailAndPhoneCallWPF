@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IHUBDATA2" EntityNamespace="IHUB2DBDC" ContextNamespace="IHUB2DBDC" Class="IHUB2DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DEVIHUBSQL1.US.CROWNCASTLE.COM,53895;Initial Catalog=IHUBDATA2;Integrated Security=True" SettingsObjectName="MigrateEmailAndPhoneCallWPF.Properties.Settings" SettingsPropertyName="IHUBDATA2_DEV" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Publish_XREF" Member="Publish_XREFs">
+    <Type Name="Publish_XREF">
+      <Column Name="seqid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="source" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="entity_type" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="src_sys_id" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="is_survivor" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="survivor_id" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="parent_id" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="active_flag" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="surviving_system" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="target_sys_id" Type="System.String" DbType="NVarChar(36)" CanBeNull="true" />
+      <Column Name="is_consolidated" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

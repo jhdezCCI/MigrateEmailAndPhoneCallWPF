@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MigrationDB">
+  <DataContextMoniker Name="/MigrationDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="acd5f5f2-161b-4a81-8a75-6089cd46186f" absoluteBounds="1.75, 0.5, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/MigrationDBDataContext/consolidated_system_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eaedfb00-783c-45b2-a4c5-8993ef22a757" absoluteBounds="1.7649999999999997, 0.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

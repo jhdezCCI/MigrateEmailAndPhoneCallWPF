@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Migration" EntityNamespace="MigrationDBDC" ContextNamespace="MigrationDBDC" Class="MigrationDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=IHUBSQL_STG.US.CROWNCASTLE.COM,51717;Initial Catalog=Migration;Integrated Security=True" SettingsObjectName="MigrateEmailAndPhoneCallWPF.Properties.Settings" SettingsPropertyName="MigrationConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.consolidated_system_user" Member="consolidated_system_users">
+    <Type Name="consolidated_system_user">
+      <Column Name="consolidated_system_user_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cci_op_active_directory_guid" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="cci_op_active_directory_upn" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="cci_directory_key" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="fiber_crm_guid" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="msdyn_contact_guid" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="msdyn_systemuser_guid" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="etl_created_timestamp" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="etl_modified_timesatmp" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="cci_aim_prsn_seq_num" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="bookable_resource_guid" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="msdyn_systemuser_manager_guid" Type="System.String" DbType="NVarChar(36)" CanBeNull="true" />
+      <Column Name="cci_aim_mgr_prsn_seq_num" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="cci_aim_prsn_active_flag" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

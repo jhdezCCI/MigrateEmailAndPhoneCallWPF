@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="IHUB2DB">
+  <DataContextMoniker Name="/IHUB2DBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4faa3662-ed50-4897-b954-f965bcb93c6e" absoluteBounds="2.125, 1, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/IHUB2DBDataContext/Publish_XREF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a97161bd-60e9-4574-8e62-d7257454f051" absoluteBounds="2.1399999999999997, 1.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

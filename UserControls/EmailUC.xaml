@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="MigrateEmailAndPhoneCallWPF.UserControls.EmailUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MigrateEmailAndPhoneCallWPF.UserControls" xmlns:ig="http://schemas.infragistics.com/xaml"
+             mc:Ignorable="d" 
+             Height="600" d:DesignWidth="600" Name="uc">
+    <Grid  Name="gd" Height="{Binding ElementName=uc, Path=ActualHeight}" Width="{Binding ElementName=uc, Path=ActualWidth}">
+        <ig:XamBusyIndicator Name="biAzure" Animation="Azure" IsIndeterminate="False" Grid.RowSpan="2" Height="{Binding ElementName=gd, Path=ActualHeight}" Width="{Binding ElementName=gd, Path=ActualWidth}">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="234,10,0,0" TextWrapping="Wrap" Text="Source:" VerticalAlignment="Top"/>
+                <ComboBox Name="sourceCB" HorizontalAlignment="Left" Margin="280,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="SourceCB_SelectionChanged">
+                    <ComboBoxItem>Fiber</ComboBoxItem>
+                    <ComboBoxItem>Wireless</ComboBoxItem>
+                    <ComboBoxItem>InsideSales</ComboBoxItem>
+                </ComboBox>
+
+                <Label Content="Search: " HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+                <TextBox Name="tbID" HorizontalAlignment="Left" Height="23" Margin="66,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
+
+                <Button Name="btnLoadEmail" Content="Load Emails" HorizontalAlignment="Left" Height="27" Margin="355,41,0,0" VerticalAlignment="Top" Width="134" Click="BtnLoadEmail_Click" IsEnabled="False"/>
+
+                <DataGrid x:Name="dgEmails" Height="247" Margin="10,103,10,0" VerticalAlignment="Top" IsReadOnly="True" MaxWidth="{Binding ElementName=gd, Path=ActualWidth}" SelectionMode="Single" />
+
+                <Button Name="btMigrate" Content="Migrate Email" HorizontalAlignment="Left" Margin="10,355,0,0" VerticalAlignment="Top" Width="181" Height="27" Click="BtMigrate_Click"/>
+                <TextBlock HorizontalAlignment="Left" Margin="419,10,0,0" TextWrapping="Wrap" Text="Target:" VerticalAlignment="Top"/>
+                <TextBlock Name="tbProcessCount" HorizontalAlignment="Left" Margin="254,362,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116"/>
+                <TextBox Name="tbComment" Margin="10,420,10,10" MinHeight="170" MaxHeight="400" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" AcceptsReturn="True"/>
+                <TextBlock x:Name="tbCountProcess" HorizontalAlignment="Left" Margin="204,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="135"/>
+                <TextBlock x:Name="tbTotalRecords" HorizontalAlignment="Left" Height="23" Margin="503,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"/>
+                <ProgressBar Name="pbar" Height="24" Minimum="0"  Margin="10,388,10,0" VerticalAlignment="Top" Value="{Binding Path=CurrentProgress}"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Environment:" VerticalAlignment="Top"/>
+                <ComboBox HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="120" Name="envCB" SelectionChanged="EnvCB_SelectionChanged">
+                    <ComboBoxItem Content="Dev"/>
+                    <ComboBoxItem Content="Test"/>
+                    <ComboBoxItem Content="UAT"/>
+                    <ComboBoxItem Content="STG"/>
+                    <ComboBoxItem Content="MOCK"/>
+                    <ComboBoxItem Content="PROD"/>
+                </ComboBox>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="459,9,0,0" TextWrapping="Wrap" Text="OSC" VerticalAlignment="Top" Width="67" IsEnabled="False" IsReadOnly="True"/>
+                <Label Content="Select Date From to bring the data:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,72,0,0"/>
+                <DatePicker HorizontalAlignment="Left" Margin="208,73,0,0" VerticalAlignment="Top" Name="FromDT"/>
+            </Grid>
+        </ig:XamBusyIndicator>
+    </Grid>
+</UserControl>

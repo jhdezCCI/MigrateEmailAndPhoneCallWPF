@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="WirelessCRMDB">
+  <DataContextMoniker Name="/WirelessCRMDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b09d25d3-5b84-41fc-bb67-b8e1ff29e752" isExpanded="false" absoluteBounds="0.625, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/WirelessCRMDBDataContext/Email" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96a487c6-1e01-4686-9ee9-58ce77687966" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 22.556355794270832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfcc2cec-69ff-4708-baf3-bdde1847c0e0" isExpanded="false" absoluteBounds="0.625, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/WirelessCRMDBDataContext/PhoneCall" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17de7f5c-bb8c-4855-8aa2-f6fbd4551a7e" absoluteBounds="0.63999999999999968, 1.585, 1.9700000000000002, 13.325887044270832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0355813b-bf97-4bce-b9cb-12127aa3187a" isExpanded="false" absoluteBounds="0.625, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/WirelessCRMDBDataContext/ActivityParty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da78de56-a06e-4652-8eef-0094e1cc6251" absoluteBounds="0.63999999999999968, 2.21, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3262f43c-3dc0-497d-86c8-93cc767b64a3" isExpanded="false" absoluteBounds="0.625, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/WirelessCRMDBDataContext/EntityView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="afb75bfd-96c7-4ec7-bd85-e66b8d27120d" absoluteBounds="0.64000000000000057, 2.835, 1.9700000000000002, 28.710001627604164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c498f4d-2687-4024-ac81-a09a2b8a6b51" isExpanded="false" absoluteBounds="0.625, 3, 2, 0.45">
+      <DataClassMoniker Name="/WirelessCRMDBDataContext/SystemUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="255ddaf3-19c2-4732-a880-6de947444fd9" absoluteBounds="0.64000000000000057, 3.46, 1.9700000000000002, 30.056111653645832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20ea113e-26bb-4297-9305-9f04b52910f9" isExpanded="false" absoluteBounds="0.625, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/WirelessCRMDBDataContext/Appointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="51b94734-e07b-46e8-b3e9-8fd28da3d47a" absoluteBounds="0.63999999999999968, 4.085, 1.9700000000000002, 15.2489013671875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fbaac74b-f83b-4ba7-bccd-6b1dc247466a" isExpanded="false" absoluteBounds="0.625, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/WirelessCRMDBDataContext/Task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1cee26e0-7a21-45c8-8466-3732ab0b8e18" absoluteBounds="0.63999999999999968, 4.71, 1.9700000000000002, 13.133585611979166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

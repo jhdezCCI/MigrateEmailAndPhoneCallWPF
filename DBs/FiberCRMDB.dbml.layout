@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="FiberCRMDB">
+  <DataContextMoniker Name="/FiberCRMDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b9997195-0e0f-406e-a49c-a4ee0a3f1cd0" isExpanded="false" absoluteBounds="0.875, 0.875, 2, 0.45">
+      <DataClassMoniker Name="/FiberCRMDBDataContext/PhoneCall" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78961901-2844-4f32-8ba4-7d311dcd550b" absoluteBounds="0.89, 1.335, 1.9700000000000002, 13.710489908854166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d3c4164-6e2c-4e33-9fd5-d3e301c94777" isExpanded="false" absoluteBounds="0.875, 1.5, 2, 0.45">
+      <DataClassMoniker Name="/FiberCRMDBDataContext/Email" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a017948-7c65-44c3-8fcc-0ec0fd929ef8" absoluteBounds="0.88999999999999968, 1.96, 1.9700000000000002, 24.287068684895832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa172e62-de91-4d23-8d91-4e4891bffe4c" isExpanded="false" absoluteBounds="0.875, 2.125, 2, 0.45">
+      <DataClassMoniker Name="/FiberCRMDBDataContext/ActivityParty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb07eb34-b8ac-4010-beb7-11d2fc47c9ad" absoluteBounds="0.88999999999999968, 2.585, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8df404cb-8429-47e2-aaf9-b235436dbb56" isExpanded="false" absoluteBounds="0.875, 2.75, 2, 0.45">
+      <DataClassMoniker Name="/FiberCRMDBDataContext/EntityView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfedc26d-da71-4b28-b049-821eab9e49a7" absoluteBounds="0.89000000000000057, 3.21, 1.9700000000000002, 26.2100830078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf67b413-7e77-4bab-b807-ee1acbee700e" isExpanded="false" absoluteBounds="0.875, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/FiberCRMDBDataContext/Appointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7520ecd-8dcb-4bd6-8d82-b65da834e20c" absoluteBounds="0.89000000000000057, 3.835, 1.9700000000000002, 15.633504231770832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="22fd2f4a-c80c-4a71-9733-7c87e864a49f" isExpanded="false" absoluteBounds="0.875, 4, 2, 0.45">
+      <DataClassMoniker Name="/FiberCRMDBDataContext/Task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="494d0b81-9e63-49c5-a7ab-42fb9de67171" absoluteBounds="0.88999999999999968, 4.46, 1.9700000000000002, 48.1324462890625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

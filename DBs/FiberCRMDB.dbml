@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CCFDEV3_MSCRM" EntityNamespace="FiberCRMDBDC" ContextNamespace="FiberCRMDBDC" Class="FiberCRMDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DEV3CCFCRMSQL1.US.CROWNCASTLE.COM\DEV3CCFCRMSQL1,49843;Initial Catalog=CCFDEV3_MSCRM;Integrated Security=True" SettingsObjectName="MigrateEmailAndPhoneCallWPF.Properties.Settings" SettingsPropertyName="CCFDEV3_MSCRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PhoneCall" Member="PhoneCalls">
+    <Type Name="PhoneCall">
+      <Column Name="ModifiedOnBehalfByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SLAName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TransactionCurrencyIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SLAInvokedIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdDsc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningTeam" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActualEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ActivityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DirectionCode" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RegardingObjectId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IsBilled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScheduledEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="IsWorkflowCreated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PriorityCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ActualStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ScheduledDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Subcategory" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ActualDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ScheduledStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="RegardingObjectIdName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="RegardingObjectTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubscriptionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="RegardingObjectIdYomiName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActivityTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsRegularActivity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="LeftVoiceMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ProcessId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StageId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TraversedPath" Type="System.String" DbType="NVarChar(1250)" CanBeNull="true" />
+      <Column Name="ActivityAdditionalParams" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SLAInvokedId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OnHoldTime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastOnHoldTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SLAId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SortDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ActivityType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="new_FollowUpDueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Email" Member="Emails">
+    <Type Name="Email">
+      <Column Name="CreatedOnBehalfByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ParentActivityIdName" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="TemplateIdName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SenderMailboxIdName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SLAName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SLAInvokedIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="TransactionCurrencyIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdDsc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningTeam" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ScheduledStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubmittedBy" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsWorkflowCreated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ActivityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ScheduledEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MimeType" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="ReadReceiptRequested" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Subcategory" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="IsBilled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ActualDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PriorityCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActualStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DirectionCode" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ActualEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TrackingToken" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ScheduledDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Sender" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ToRecipients" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DeliveryReceiptRequested" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RegardingObjectId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageId" Type="System.String" DbType="NVarChar(320)" CanBeNull="true" />
+      <Column Name="RegardingObjectTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RegardingObjectIdName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeliveryAttempts" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MessageIdDupCheck" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Compressed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Notifications" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RegardingObjectIdYomiName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActivityTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsRegularActivity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="EmailSender" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="EmailSenderName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="EmailSenderObjectTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SendersAccount" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SendersAccountObjectTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AttachmentCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SenderMailboxId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeliveryPriorityCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentActivityId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="InReplyTo" Type="System.String" DbType="NVarChar(320)" CanBeNull="true" />
+      <Column Name="BaseConversationIndexHash" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConversationIndex" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="CorrelationMethod" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SentOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PostponeEmailProcessingUntil" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ProcessId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StageId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActivityAdditionalParams" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsUnsafe" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SLAId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SLAInvokedId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OnHoldTime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastOnHoldTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SendersAccountName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="SendersAccountYomiName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="EmailSenderYomiName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="TraversedPath" Type="System.String" DbType="NVarChar(1250)" CanBeNull="true" />
+      <Column Name="AttachmentOpenCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConversationTrackingId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DelayedEmailSendTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastOpenedTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LinksClickedCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OpenCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReplyCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmailTrackingId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="FollowEmailUserPreference" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsEmailFollowed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EmailReminderExpiryTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EmailReminderType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmailReminderStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmailReminderText" Type="System.String" DbType="NVarChar(1250)" CanBeNull="true" />
+      <Column Name="TemplateId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ReminderActionCardId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SortDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="resco_ContentStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="resco_CreatedAs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="resco_CreatedFrom" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="resco_EmailId" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="resco_EventId" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="resco_IsLocal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="resco_Snippet" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="resco_Source" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="resco_StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="resco_ThreadId" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityParty" Member="ActivityParties">
+    <Type Name="ActivityParty">
+      <Column Name="ActivityPartyId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ActivityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="PartyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PartyObjectTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ParticipationTypeMask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AddressUsed" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="AddressUsedEmailColumnNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DoNotEmail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotFax" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotPostalMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotPhone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PartyIdDsc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PartyIdName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="IsPartyDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ExchangeEntryId" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="Effort" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="InstanceTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResourceSpecId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ResourceSpecIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ResourceSpecIdDsc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScheduledStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScheduledEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActivityTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EntityView" Member="EntityViews">
+    <Type Name="EntityView">
+      <Column Name="EntityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="ObjectTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PhysicalName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="LogicalName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="CollectionName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="BaseTableName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="LogicalCollectionName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="IsIntersect" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsSecurityIntersect" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLookupTable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EventMask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsLogicalEntity" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsCustomizable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsCollaboration" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActivity" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddressTableName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="IsMappable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OwnershipTypeMask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsAudited" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UsesFullnameConventionRules" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsParented" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityMask" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsReplicated" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsReplicationUserFiltered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsChildEntity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsCustomEntity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsActivityParty" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsValidForAdvancedFind" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ExtensionTableName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="ReportViewName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="IsRequiredOffline" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsRenameable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityClassName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceClassName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="EntityAssembly" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceAssembly" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="EntityRowId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="IsDuplicateCheckSupported" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsImportable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsShareableAcrossOrgs" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsPublishable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OriginalLocalizedName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="OriginalLocalizedCollectionName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CanTriggerWorkflow" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="WorkflowSupport" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CanBeChildInCustomRelationship" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanBeInCustomEntityAssociation" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanBeInCustomReflexiveRelationship" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsMailMergeEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RecurrenceTypeMask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RecurrenceBaseEntityId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IsDocumentManagementEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAccessLevelMask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsVisibleInMobile" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsMultipleQueueEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AutoRouteToOwnerQueue" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAuditEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsConnectionsEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsReadingPaneEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsMapiGridEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsEnabledForCharts" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IconLargeName" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="IconMediumName" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="IconSmallName" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="NextCustomAttributeColumnNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivityTypeMask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsSolutionAware" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SolutionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SupportingSolutionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ComponentState" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="OverwriteTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="InheritsFrom" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IsInheritedFrom" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanBeSecured" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyConnectionSettings" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyDuplicateDetectionSettings" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyMailMergeSettings" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyQueueSettings" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanCreateAttributes" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanBeRelatedEntityInRelationship" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanBePrimaryEntityInRelationship" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanBeInManyToMany" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanCreateForms" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanCreateCharts" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanCreateViews" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyAuditSettings" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyMobileVisibility" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ParentComponentType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentControllingAttributeName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IsManaged" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyAdditionalSettings" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAIRUpdated" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsQuickCreateEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IntroducedVersion" Type="System.String" DbType="NVarChar(48)" CanBeNull="true" />
+      <Column Name="AutoCreateAccessTeams" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsBusinessProcessEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="HasIdsTable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsReadOnlyInMobileClient" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsVisibleInMobileClient" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyMobileClientVisibility" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyMobileClientReadOnly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsEnabledForTrace" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsStateModelAware" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EnforceStateTransitions" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanChangeHierarchicalRelationship" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityHelpUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="EntityHelpUrlEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsHSMEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UsesBusinessDataLabelTable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ChangeTrackingEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanChangeTrackingBeEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanEnableSyncToExternalSearchIndex" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SyncToExternalSearchIndex" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityClass" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EntityColor" Type="System.String" DbType="NVarChar(7)" CanBeNull="true" />
+      <Column Name="EntitySetName" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="IsInteractionCentricEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsOneNoteIntegrationEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsPrivate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsOfflineInMobileClient" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanModifyMobileClientOffline" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DaysSinceRecordLastModified" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsEnabledForExternalChannels" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanExternalChannelsBeEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsOptimisticConcurrencyRequired" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsOptimisticConcurrencyEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanOptimisticConcurrencyBeEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanOptimisticConcurrencyBeRequired" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsKnowledgeManagementEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDocumentRecommendationsEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsSLAEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MobileOfflineFilters" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="IsBPFEntity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Appointment" Member="Appointments">
+    <Type Name="Appointment">
+      <Column Name="ModifiedOnBehalfByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SLAName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TransactionCurrencyIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SLAInvokedIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdDsc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningTeam" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsAllDayEvent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ActualEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="IsWorkflowCreated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RegardingObjectId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsBilled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ScheduledDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GlobalObjectId" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="ScheduledStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OutlookOwnerApptId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ScheduledEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ActualDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ActualStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SubscriptionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PriorityCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Subcategory" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="RegardingObjectTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RegardingObjectIdName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RegardingObjectIdYomiName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="TraversedPath" Type="System.String" DbType="NVarChar(1250)" CanBeNull="true" />
+      <Column Name="InstanceTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedFieldsMask" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SeriesId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OriginalStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActivityTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsRegularActivity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="IsMapiPrivate" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ProcessId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StageId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="AttachmentErrors" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AttachmentCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivityAdditionalParams" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SLAId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SLAInvokedId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OnHoldTime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastOnHoldTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SortDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="resco_EventId" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="resco_ExternalId" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="resco_IsLocal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="resco_Source" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Task" Member="Tasks">
+    <Type Name="Task">
+      <Column Name="New_VendorServiceOrderId3Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="New_VendorServiceOrderId2Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="new_ordernumberidName" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="New_ProvisioningDetailIdName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="new_servicenumberidName" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="SLAInvokedIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="New_ProvisioningDetailId2Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TransactionCurrencyIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="new_closedbyYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="new_closedbyName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="New_VendorServiceOrderIdName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfByName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfByYomiName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SLAName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdDsc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningTeam" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ActualEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScheduledStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RegardingObjectId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ScheduledDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ActualStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IsWorkflowCreated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Subcategory" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ScheduledEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PercentComplete" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubscriptionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PriorityCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="ServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActualDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsBilled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RegardingObjectIdName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="RegardingObjectTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RegardingObjectIdYomiName" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CreatedOnBehalfBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOnBehalfBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActivityTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsRegularActivity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="ProcessId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StageId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TraversedPath" Type="System.String" DbType="NVarChar(1250)" CanBeNull="true" />
+      <Column Name="CrmTaskAssignedUniqueId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActivityAdditionalParams" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SLAId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SLAInvokedId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OnHoldTime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastOnHoldTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SortDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_VendorServiceOrderId3" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_FiberScheduledCompDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIDeliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FiberAdjScheduledDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNEAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderEEAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderDraftingCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberDLRComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_RejectToFiberLI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_WorkOrderDEMaterialsRequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_OrderConformationSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderDEScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstOSPPrelimPlan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FieldOpsCircuitTestCompDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_RejectToProvisioning" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_WorkOrderNEEERequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningDraftingScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeFacilitiesRecordUpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberConstSiteFileCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_VendorServiceOrderId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_FieldOpsDemarcProvidedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_RejectToFiberNE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_deprovisioningstatustext" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_ProvisioningScheduledCompDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIRequestedFOCDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ZLocLOASent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_SiteFileCreated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_WorkOrderDraftingScheduledDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderEESiteFileCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderDEAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeProvisioningScheduledSoftDisconnectDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_BillStopDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderOpticalPackageComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_LightowerCircuitID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_WorkOrderFieldNodeTurnoverComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningLegalAdjScheduledDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_RecordsCloseOutDeliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_RejectToFiberPM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstISPAsBuilt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeTypeIIRequestedDisconnect" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNEMaterialsRequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderProvisioningScheduledDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningAdjustedScheduledDLRDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstCivilAsBuilt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeTypeIIActualDisconnect" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderDECompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderProvisioningDLRScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ALocLOASent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FiberFinalDLRDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderOpticalAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_AdjustedFOCDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFConstCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderEESiteSurveyCompleted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningDetailId2" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_WorkOrderEECompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIOrderDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeFieldRecordUpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFConstMakeReadyComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderOpticalCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="new_ordernumberid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_RecordsCloseOutAcceptanceDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberConstNCSiteReady" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIVendorFOCDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderProvisioningCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFieldScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningAdjScheduledDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIVendorTestDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="new_servicenumberid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIVendorDLRDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningLegalScheduledDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstISPPrelimPlan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderEEScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderDraftingAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ScheduledCircuitDeProvisioningDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderProvisioningDLRComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberConstSiteSurveyCompleted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_defacilitiesscheduledcircuitdeprovdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FieldOpsAdjScheduledDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberDLRAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FiberDRLDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNPAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNPMaterialsRequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstMakeReadyScheduledDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFieldRedlinesSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeProvisioningSoftDisconnectDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderProvisioningAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningWorkOrderNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="New_defiberscheduledcircuitdeprovdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_deprovisioningscheduledcircuitdeprovdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_TicketNotes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ActivityType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIAcceptanceDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_SiteSurveyCompleted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningStatus" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_WorkOrderFConstAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_TicketAssignedTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_CompletionNoticeSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningScheduledDLRDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNPEERequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFieldCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNPDataPackageComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FieldOpsWorkOrderCompDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FieldOpsScheduledCompDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstMakeReadyCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNEDataPackageComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FiberTestResultsDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstOSPAsBuilt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_detypeiischeduledcircuitdeprovdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderRequestedCompletionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_CTPURARequired" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_RecordsCloseOutTestDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkFieldFieldNodeUpdateSubmitted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ProvisioningDraftingAdjustedSchedule" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderEERegionRequired" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ProvisioningDLRDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_NetCrackerUpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FOCNoticeSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFConstAccessAgreementRequired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_DeTypeIISubmittedDisconnect" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstSiteFileCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningWorkOrderIssued" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_ProvisioningAdjustedDLRDriver" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_DeFieldRecordEquipmentReclaim" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FiberDLRDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FieldsOpsTypeIIWiringDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNEScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningDetailId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_WorkOrderNPScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstMakeReadyAdjScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_defieldscheduledcircuitdeprovdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderProvisioningDLRAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNPCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFConstScheduledMakeReady" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningLegalCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderOpticalScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderNECompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderDEDataPackageComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderDEEERequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningDraftingCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_workorderstatustext" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberDLRScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_provisioningstatuspicklist" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_DeFiberRecordUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ProvisioningFConstScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_FiberScheduledDLRDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderOpticalMaterialsRequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeProvisioningHardDisconnectDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_RejectComments" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_VendorServiceOrderId2" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_WorkOrderEEMaterialsRequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderOpticalEERequestSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeProvisioningStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIAdjFOCDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFieldAdjustedScheduled" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_JeopardyCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_WorkOrderFConstAccessAgreementComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DeProvisioningRecordUpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_NCSiteReady" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_WorkOrderFConstScheduledCompletion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_FiberAdjScheduledDLRDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_WorkOrderFiberCompletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_RejectToFiberHV" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_CloseCompleteRejected" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ProvisioningTypeIIJEPCodes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="new_closedon" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="new_closedby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
